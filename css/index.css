@@ -135,3 +135,78 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
 }
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 4.5rem;
+}
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+}
+span {
+  font-weight: bold;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.top .header {
+  margin-left: 20px;
+}
+.top .header h1 {
+  margin-bottom: 5px;
+}
+.top .nav {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  margin: auto 0;
+}
+.top .nav a {
+  color: black;
+  margin-right: 40px;
+}
+.middle {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  margin: 20px 0 0 20px;
+}
+.middle .card {
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 40px;
+  width: 33%;
+}
+.middle .card .card-img {
+  width: 100%;
+}
+.middle .card .card-img img {
+  min-width: 100%;
+}
+.middle .card .card-text {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+.middle .card .card-text h2 {
+  font-size: 3rem;
+  background: black;
+  color: white;
+  margin-top: 10px;
+}
+.middle .card .card-text h3 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.middle .card .card-text p {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 10px;
+}
+.bottom {
+  display: none;
+}

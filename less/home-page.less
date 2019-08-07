@@ -1,1 +1,51 @@
 // Homepage styles go here.
+.middle {
+    display: flex; // Must be applied to parent element in order to apply flex properties to its children
+    max-width: 100%; // This rule eliminates the horizontal scroll bar
+    justify-content: center; // Centers the BIG container div horizontally
+    margin: 20px 0 0 20px;
+
+    .card {
+        flex-direction: column; // Tells card to align items vertically, not horizontally
+        justify-content: space-evenly;
+        margin-right: 40px;
+        width: 33%; // Splits the div into three separate contains for three different dogs
+
+        .card-img {
+            width: 100%; // Combining this with the rule below it helps prevent strange image behavior
+
+            img {
+                min-width: 100%;
+            }
+        }
+
+        .card-text {
+            font-family: @main-font;
+            text-align: center;
+
+            h2 {
+                font-size: 3rem;
+                background: black; // Makes text more readable since it all doesn't look the same
+                color: white;
+                margin-top: 10px; // Notice consistent spacing for a nice, polished appearance
+            }
+
+            h3 {
+                font-size: 2rem;
+                margin-top: 10px;
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 1.2;
+                border: 1px solid black; // Turns paragraph into a table to make it more readable
+                padding: 5px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.bottom {
+    display: none;
+}

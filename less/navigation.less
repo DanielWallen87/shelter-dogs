@@ -1,1 +1,26 @@
-// Navigation styles go here.
+// Navigation styles go here -- notice "child" elements are nested within their parent -- color tells what closes where
+.top {
+    display: flex; // "Flex" opens a pandora's box of styling options that make web design easier
+    justify-content: space-between;
+
+    .header {
+        margin-left: 20px; // Space to scoot an element. Notice this and the "a" (link tag) match
+
+        h1 {
+            margin-bottom: 5px; // The sub-title at the upper-left corner needed room to breathe
+        }
+
+    }
+
+    .nav {
+        font-family: @main-font; // I gave the primary font a variable name for ease of access
+        font-size: 2rem; // Using REM's causes font to respond when people change text size settings in Chrome
+        margin: auto 0; // Centers margin vertically (within its container w/ the header). 0 auto does the same horizontally
+    
+        a {
+            color: black; // Must use the attribute text-decoration: none to change link color. I did so in a global file
+            margin-right: 40px; // Notice it matches margin-left for header - sans margin, nav links would almost overlap
+        }
+    }
+}   
+
