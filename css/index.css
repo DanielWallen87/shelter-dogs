@@ -154,6 +154,7 @@ span {
   justify-content: space-between;
 }
 .top .header {
+  margin-top: 20px;
   margin-left: 20px;
 }
 .top .header h1 {
@@ -178,12 +179,15 @@ span {
   flex-direction: column;
   justify-content: space-evenly;
   margin-right: 40px;
+  margin-bottom: 40px;
   width: 33%;
 }
 .middle .card .card-img {
   width: 100%;
+  display: flex;
 }
 .middle .card .card-img img {
+  justify-content: space-evenly;
   min-width: 100%;
 }
 .middle .card .card-text {
@@ -208,5 +212,34 @@ span {
   margin-top: 10px;
 }
 .bottom {
-  display: none;
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.bottom .daniel-bio {
+  width: 74%;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 20px;
+  justify-content: space-evenly;
+}
+.bottom .daniel-bio h2 {
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.bottom .daniel-bio p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+.bottom .daniel-photo {
+  width: 26%;
+  max-height: 100%;
+  justify-content: space-evenly;
+}
+.bottom .daniel-photo img {
+  min-height: 100%;
 }
