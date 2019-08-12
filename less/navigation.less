@@ -15,9 +15,17 @@
             margin: 0 auto;
         }
 
+        @media screen and @tablet {
+            margin: 0 auto;
+        }
+
     }
 
     @media screen and @mobile {
+        flex-direction: column;
+    }
+
+    @media screen and @tablet {
         flex-direction: column;
     }
 
@@ -29,6 +37,12 @@
         a {
             color: black; // Must use the attribute text-decoration: none to change link color. I did so in a global file
             margin-right: 40px; // Notice it matches margin-left for header - sans margin, nav links would almost overlap
+            opacity: 1;
+            transition: 0.8s;
+
+            &:hover {
+                opacity: 0.5;
+            }
         }
 
         @media screen and @mobile {
@@ -36,6 +50,13 @@
             justify-content: center;
             margin-left: 35px; // Not centering perfectly as it should so I added this to fit my screen - needs debugging
             margin-top: 20px;
+        }
+
+        @media screen and @tablet {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-left: 35px;
         }
     }
 }   
