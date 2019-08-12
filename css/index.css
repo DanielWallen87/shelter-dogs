@@ -149,6 +149,11 @@ a {
 span {
   font-weight: bold;
 }
+li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
 .top {
   display: flex;
   justify-content: space-between;
@@ -160,6 +165,16 @@ span {
 .top .header h1 {
   margin-bottom: 5px;
 }
+@media screen and (max-width: 500px) {
+  .top .header {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .top {
+    flex-direction: column;
+  }
+}
 .top .nav {
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
@@ -169,11 +184,24 @@ span {
   color: black;
   margin-right: 40px;
 }
+@media screen and (max-width: 500px) {
+  .top .nav {
+    display: flex;
+    justify-content: center;
+    margin-left: 35px;
+    margin-top: 20px;
+  }
+}
 .middle {
   display: flex;
   max-width: 100%;
   justify-content: center;
   margin: 20px 0 0 20px;
+}
+@media screen and (max-width: 500px) {
+  .middle {
+    flex-direction: column;
+  }
 }
 .middle .card {
   flex-direction: column;
@@ -182,6 +210,12 @@ span {
   margin-bottom: 40px;
   width: 33%;
 }
+@media screen and (max-width: 500px) {
+  .middle .card {
+    justify-content: center;
+    width: 100%;
+  }
+}
 .middle .card .card-img {
   width: 100%;
   display: flex;
@@ -189,6 +223,11 @@ span {
 .middle .card .card-img img {
   justify-content: space-evenly;
   min-width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .middle .card .card-img img {
+    max-width: 100%;
+  }
 }
 .middle .card .card-text {
   font-family: 'Raleway', sans-serif;
@@ -217,11 +256,22 @@ span {
   justify-content: center;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 500px) {
+  .bottom {
+    flex-direction: column-reverse;
+  }
+}
 .bottom .daniel-bio {
   width: 74%;
   font-family: 'Raleway', sans-serif;
   margin: 0 20px;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 500px) {
+  .bottom .daniel-bio {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 .bottom .daniel-bio h2 {
   text-align: center;
@@ -235,6 +285,28 @@ span {
   line-height: 1.5;
   padding-bottom: 10px;
 }
+@media screen and (max-width: 500px) {
+  .bottom .daniel-bio p {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    padding: 0 5px;
+  }
+}
+.bottom .daniel-bio .bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  margin: 10px 0;
+  background: white;
+  color: black;
+  transition: 0.6s;
+}
+.bottom .daniel-bio .bottom-nav a:hover {
+  background: black;
+  color: white;
+}
 .bottom .daniel-photo {
   width: 26%;
   max-height: 100%;
@@ -242,4 +314,15 @@ span {
 }
 .bottom .daniel-photo img {
   min-height: 100%;
+}
+@media screen and (max-width: 500px) {
+  .bottom .daniel-photo img {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bottom .daniel-photo {
+    width: 100%;
+  }
 }

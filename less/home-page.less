@@ -5,12 +5,21 @@
     justify-content: center; // Centers the BIG container div horizontally
     margin: 20px 0 0 20px;
 
+    @media screen and @mobile {
+        flex-direction: column;
+    }
+
     .card {
         flex-direction: column; // Tells card to align child elements vertically, not horizontally
         justify-content: space-evenly;
         margin-right: 40px;
         margin-bottom: 40px;
         width: 33%; // Splits the div into three separate contains for three different dogs
+
+        @media screen and @mobile {
+            justify-content: center;
+            width: 100%;
+        }
 
         .card-img {
             width: 100%; // Combining this with the rule below it helps prevent strange image behavior
@@ -19,6 +28,10 @@
             img {
                 justify-content: space-evenly;
                 min-width: 100%;
+
+                @media screen and @mobile {
+                    max-width: 100%;
+                }
             }
         }
 
@@ -51,15 +64,24 @@
 
 .bottom {
     display: flex;
-    max-width: 100%;
-    justify-content: center;
+    max-width: 100%; // eliminates horizontal scroll bar
+    justify-content: center; // centers content inside the container
     margin-bottom: 40px;
 
+    @media screen and @mobile {
+        flex-direction: column-reverse;
+    }
+
     .daniel-bio {
-        width: 74%;
+        width: 74%; // Weird percentage, but I just played around until I found what looked best. .daniel-pic gets the rest
         font-family: @main-font;
         margin: 0 20px;
-        justify-content: space-evenly;
+        justify-content: space-evenly; // prevents odd behavior when window is resized. Need mobile rules for this, too
+
+        @media screen and @mobile {
+            margin: 0 auto;
+            width: 100%;
+        }
 
         h2 {
             text-align: center;
@@ -73,7 +95,32 @@
             font-size: 1.5rem;
             line-height: 1.5;
             padding-bottom: 10px;
+
+            @media screen and @mobile {
+                width: 100%;
+                margin-bottom: 20px;
+                font-size: 1.5rem;
+                padding: 0 5px;
+            }
         }
+
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            font-family: @main-font;
+            font-size: 2rem;
+            margin: 10px 0;
+            
+           
+            a {
+                color: black;
+                opacity: 1;
+                transition: 0.8s;
+                
+                a:hover {
+                opacity: 0.5;
+                }
+            }
     }
 
     .daniel-photo {
@@ -83,6 +130,15 @@
 
         img {
             min-height: 100%;
+
+            @media screen and @mobile {
+                min-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media screen and @mobile {
+            width: 100%;
         }
     }
 }

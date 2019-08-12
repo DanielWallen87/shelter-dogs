@@ -11,6 +11,14 @@
             margin-bottom: 5px; // The sub-title at the upper-left corner needed room to breathe
         }
 
+        @media screen and @mobile {
+            margin: 0 auto;
+        }
+
+    }
+
+    @media screen and @mobile {
+        flex-direction: column;
     }
 
     .nav {
@@ -21,6 +29,13 @@
         a {
             color: black; // Must use the attribute text-decoration: none to change link color. I did so in a global file
             margin-right: 40px; // Notice it matches margin-left for header - sans margin, nav links would almost overlap
+        }
+
+        @media screen and @mobile {
+            display: flex;
+            justify-content: center;
+            margin-left: 35px; // Not centering perfectly as it should so I added this to fit my screen - needs debugging
+            margin-top: 20px;
         }
     }
 }   
