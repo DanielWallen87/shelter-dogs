@@ -1,7 +1,7 @@
 // Homepage styles go here.
 .middle {
     display: flex; // Must be applied to parent element in order to apply flex properties to its children
-    min-width: 100%; // This rule eliminates the horizontal scroll bar
+    width: 100%; // This rule eliminates the horizontal scroll bar
     justify-content: center; // Centers the BIG container div horizontally
     margin: 20px 0 0 20px;
 
@@ -41,11 +41,12 @@
 
                 @media screen and @mobile {
                     max-width: 100%;
-                    max-height: 100%;
+                    // max-height: 100%;
                 }
 
                 @media screen and @tablet {
-                    max-height: 100vh;
+                    max-width: 100%;
+                    // max-height: 100vh;
                 }
             }
         }
@@ -79,9 +80,10 @@
 
 .bottom {
     display: flex;
+    align-items: center;
     max-width: 100%; // eliminates horizontal scroll bar
     justify-content: space-evenly; // centers content inside the container
-    margin-bottom: 0;
+    margin-bottom: 20px;
 
     @media screen and @mobile {
         flex-direction: column-reverse;
@@ -100,7 +102,6 @@
         justify-content: space-evenly; // prevents odd behavior when window is resized. Need mobile rules for this, too
 
         @media screen and @mobile {
-            margin: 0 auto;
             max-width: 100%;
             justify-content: center;
         }
@@ -141,7 +142,7 @@
             color: black;
             opacity: 0.5;
             transition: 0.8s;
-            margin-top: 12px;
+            margin-top: 22px;
 
                 &:hover {
                     opacity: 1;
@@ -150,34 +151,28 @@
     }
 
     .daniel-photo {
-        width: 26%;
-        height: 100%;
-        justify-content: space-evenly;
+        display: flex;
+        margin-top: 20px;
+        // width: 26%; // Does NOT need to be set manually or it will mess up all dimensions.
+        // height: 100%;
 
         @media screen and @mobile {
-            max-width: 100%;
-            justify-content: center;
-            // margin: 0 auto;
-        }
-
-        @media screen and @tablet {
-            margin: 0 auto;
+            width: 100%;
             justify-content: center;
         }
 
         img {
-            min-height: 100%;
-
-            @media screen and @mobile {
-                min-width: 100%;
-                max-height: 90vh;
-                // display: block;
-                // margin-left: 20px;
-            }
+            // min-width: 95%;
 
             @media screen and @tablet {
-                margin-left: -50px;
+                // margin-left: 120%;
                 min-width: 100%;
+            }
+
+            @media screen and @mobile {
+                width: 100%;
+                // margin: auto;
+                // min-height: 90vh;
             }
         }
     }
