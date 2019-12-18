@@ -131,9 +131,11 @@ table {
 }
 html {
   font-size: 62.5%;
+  width: 100%;
 }
 body {
   font-family: 'Raleway', sans-serif;
+  max-width: 100%;
 }
 h1 {
   font-family: 'Raleway', sans-serif;
@@ -372,17 +374,12 @@ li {
 }
 @media screen and (max-width: 500px) {
   .bottom .daniel-photo {
-    width: 100%;
+    max-width: 100%;
     justify-content: center;
   }
 }
 @media screen and (max-width: 900px) {
   .bottom .daniel-photo img {
     min-width: 100%;
-  }
-}
-@media screen and (max-width: 500px) {
-  .bottom .daniel-photo img {
-    width: 100%;
   }
 }
