@@ -1,3 +1,17 @@
-# shelter-dogs
+# Shelter Dogs (Adoption App/Website)
 
-Creating a new website about all the great shelter dogs that are - or were - availabe for adoption in the area of Kingsport and the Tri-Cities. Potential for an app and Facebook page that connects shelter dogs all over the US with potential owners who would take excellent care of them. Start with a local focus and gradually ramp up the areas served and/or services offered as time goes on. Allow donations via Paypal (80% goes directly to an animal shelter in Kingsport, TN called Petworks Pet Adoption Center). In the interest of fairness, occassionally switch in a different shelter. Base this decision on practicalities like geographic location and a shelter's proven ability to spread word about animals in need of a loving home. Create a page that lists the (50+) shelter dogs I've walked. They'll be listed in 3 x 3 photos on screens above 1000px. On tablets, it flips to 2 x 2 and of course 1 x 1 on mobile devices. There will be a short list of details such as the age, breed, temperment, and current status. Clicking the shelter dog's page takes users to a profile that includes 3-6 photos, a header that displays a status update ("Adopted," "Fosteed," or "Available for Adoption), and a paragraph containing a blurb that resembles a dating profile. The latter will be repurposed from Facebook posts I've made about the dogs and photos I've stored on my cell-phone. Launch with a bunch of prepared content related to all the doggos I've walked thus far and add two blogs about the most recet doggies per week. Leave out the donate button until we're reliably, repeatably, and predictably generating a sizable amount of traffic: average 1,000+ views every month. Explore the option of adding a dog walking service and fast + efficient + optomized web/app development for animal rescues and animal shelters in the near future. 
+Note: I've done extensive market research and planning for a similar but separate app/website that will eventually replace this one. In the meanwhile, I'm leaving this code as it is (even though the mobile responses for medium-sized screens desperately need attention).
+
+My favorite volunteering activity = walking shelter dogs. I also post their photos on Facebook and share with animal rescue groups to speed up the adoption process. The goal here was to make a product that will achieve that goal more effectively.
+
+This structure is similar to what I hope to accomplish with a much better app, which I'll devote days and weeks to coding (versus hours). Shelters will be able to submit the info in a similar card-like format for each adoptable dog or cat.
+
+## How the Website Works
+
+- Desktop view is decently on point (minus the horizontal scroll, which I'd eliminate if I planned to use the site).
+- Switching to mobile changes the flex-direction of each card to "column" for a more attractive view.
+- Social media links on the bottom are current. Feel free to connect on any of those platforms.
+
+## Live Link
+
+[Shelter Dogs (Adoption App/Website)](https://shelter-dogs.webwallen.now.sh/)
