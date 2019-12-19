@@ -171,6 +171,9 @@ li {
 .top .header h1 {
   margin-bottom: 5px;
 }
+.middle {
+  width: 100vw;
+}
 @media screen and (max-width: 500px) {
   .top .header {
     margin: 0 auto;
@@ -223,7 +226,7 @@ li {
 }
 .middle {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   justify-content: center;
   margin: 20px 0 0 20px;
 }
